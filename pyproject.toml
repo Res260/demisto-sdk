@@ -51,7 +51,6 @@ coloredlogs = "^15.0.1"
 configparser = "^5.2.0"
 coverage = "^7.2.1,<7.4" # in 7.4 we get empty results
 decorator = "^5.1.1"
-<<<<<<< HEAD
 demisto-py = {git = "https://github.com/Res260/demisto-py.git", branch = "improvements"}
 dictor = "^0.1.9"
 docker = "^7.1.0"
