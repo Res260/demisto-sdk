@@ -896,22 +896,27 @@ files = [
 
 [[package]]
 name = "demisto-py"
-version = "3.2.21"
+version = "3.2.23"
 description = "\"A Python library for the Demisto API\""
 optional = false
-python-versions = "<=3.13,>=3.9"
-files = [
-    {file = "demisto_py-3.2.21-py3-none-any.whl", hash = "sha256:305e6dcb9ac0b498a47ace21adb16a8f20b1fbf3387f7b87c5ff823563474d3f"},
-    {file = "demisto_py-3.2.21.tar.gz", hash = "sha256:27063b600e8652fdfb60f09fb5bcf2da2e8173ccd4a938f1145754d4d8cb7e1e"},
-]
+python-versions = ">=3.9,<=3.13"
+groups = ["main"]
+files = []
+develop = false
 
 [package.dependencies]
-certifi = ">=2024.2.2,<2025.0.0"
-python-dateutil = ">=2.7.2,<3.0.0"
+certifi = "^2024.2.2"
+python-dateutil = "^2.7.2"
 setuptools = ">=80.9.0"
-six = ">=1.16,<2.0"
-tzlocal = ">=5.2.0,<6.0.0"
-urllib3 = "<2.1.0"
+six = "^1.16"
+tzlocal = "^5.2.0"
+urllib3 = ">2.6.0"
+
+[package.source]
+type = "git"
+url = "https://github.com/Res260/demisto-py.git"
+reference = "improvements"
+resolved_reference = "0ba13d98fad945cd98157aa7c070bb663f63dfea"
 
 [[package]]
 name = "deprecated"
